@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header h1 {
+    font-size: 80px;
+    padding: 30px;
+    color: teal;
+}
+
+.header h2 {
+    font-size: 30px;
+    padding: 30px;
+}
+
+.two-column h1 {
+    font-size: 4.5vw;
+    color: grey;
+}
+
+.two-column h2 {
+    font-size: 3vw;
+}
+
+.two-column h3 {
+    font-size: 2vw;
+}
+
+.one-column {
+    padding: 7% 7% 0% 7%;
+}
+
+.two-column {
+    padding: 7%;
+    width: 50%;
+    float: left;
+}
+
+.two-column img {
+    border-radius: 10px;
+}
+
+.four-column {
+    padding: 7%;
+    width: 25%;
+    float: left;
+}
+
+#section-1 {
+    background-color: #f5eef5;
+}
+
+#section-2 {
+    background-color: #faf5fe;
+}
+
+#section-3 {
+    background-color: #f2f9f8;
+}
+
+#footer {
+    background-color: #000000;
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    /* Responsive layout */
+    /* la clase two-column ha de tener ancho de 100% */
+    .two-column {
+        width: 100%;
+    }
+    /* la clase four-column ha de tener ancho de 50% */
+    .four-column {
+        width: 50%;
+    }
+    /* la clase h1 ha de tener tamaño de fuente de 6vw */
+    .two-column h1 {
+        font-size: 6vw;
+    }
+    /* la clase h2 ha de tener tamaño de fuente de 5vw */
+    .two-column h2 {
+        font-size: 5vw;
+    }
+    /* la clase h3 ha de tener tamaño de fuente de 4vw */
+    .two-column h3 {
+        font-size: 4vw;
+    }
+    .two-column img {
+        width: 100%;
+    }
+    #footer {
+        font-size: 80%;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .header h2 {
+        font-size: 20px;
+    }
+    /* ...otros ajustes... */
+}
